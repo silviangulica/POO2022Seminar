@@ -1,2 +1,2 @@
-# POO2022Seminar
- Rep for POO 2022
+# Despre Solutii
+  Le postez astazi in 21 feb 2022, am o problema la fisierele text in Visual Studio
