@@ -36,5 +36,6 @@ int main()
 		Suma += tVal;
 	}
 	printf("%d\n", Suma);
+    fp.close();
 	return 0;
 }
