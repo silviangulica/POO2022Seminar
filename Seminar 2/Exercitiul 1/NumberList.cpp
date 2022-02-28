@@ -41,10 +41,8 @@ void NumberList::Sort()
 
 void NumberList::Print()
 {
-	printf("\n");
 	for (int i = 0; i < count; i++)
 	{
 		printf("%d ", this->number[i]);
 	}
-	printf("\n");
 }
