@@ -1,6 +1,7 @@
 # Informatii Laborator 3
 - 07 Mar 2022:
 	* Am adaugat Exercitiul 1 - Laborator 3
+	* Am adaugat Exercitiul 2 - Laborator 3(NEFINALIZAT)
 
 
 # Informatii Laborator 2
