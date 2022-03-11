@@ -99,32 +99,32 @@ void Canvas::DrawLine(int x1, int y1, int x2, int y2, char ch)
 	// Assume that x1 is < than x2
  	int x = x1;	int x_final = x2;
 	int y = y1;
-    int dx = x2 - x1;
-    int dy = y2 - y1;
+    	int dx = x2 - x1;
+    	int dy = y2 - y1;
 	int Di;
 
-	// Check for "non-conformist" args
+	// Check for "nonconformist" args
 	if(x1>x2)
-    {
-	    x = x2; y = y2; x_final = x1;
-        dx = x1-x2;
-        dy = y1-y2;
-    }
+    	{
+	   	x = x2; y = y2; x_final = x1;
+        	dx = x1-x2;
+        	dy = y1-y2;
+    	}
 	Di = 2*dy-dx;
-    SetPoint(x,y,ch);
+    	SetPoint(x,y,ch);
 
 	// The Algo...
-    while(x < x_final)
-    {
+    	while(x < x_final)
+    	{
 		x++;
-        if(Di < 0)	Di += 2*dy;
-        else
-        {
-            y++;
-            Di += 2*(dy-dx);
-        }
-        SetPoint(x,y,ch);
-     }
+        	if(Di < 0)	Di += 2*dy;
+        	else
+        	{
+           	 	y++;
+            		Di += 2*(dy-dx);
+        	}
+        	SetPoint(x,y,ch);
+     	}
 }
  
 // -> The Fill funcs
