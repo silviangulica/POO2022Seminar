@@ -8,7 +8,7 @@ int main()
 	Sort t(10, 1, 9);
 	t.Print();
 	printf("The vector was BubbleSorted: \n");
-	t.BubbleSort(true);
+	t.InsertSort();
 	t.Print();
 
 	printf("The vector was inverted BubbleSorted: \n");

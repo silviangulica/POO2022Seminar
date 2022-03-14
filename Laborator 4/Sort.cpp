@@ -53,6 +53,9 @@ Sort::Sort(int NrElements, int MaximumValue, int MinimumValue)
 	}
 }
 
+
+
+
 // Sorting funcs
 void Sort::InsertSort(bool ascendent)
 {
@@ -63,10 +66,21 @@ void Sort::InsertSort(bool ascendent)
 	{
 		key = Vector[i];
 		j = i - 1;
-		while (j >= 0 && Vector[j] > key)
+		if(ascendent)
 		{
-			Vector[j + 1] = Vector[j];
-			j--;
+			while (j >= 0 && Vector[j] > key)
+			{
+				Vector[j + 1] = Vector[j];
+				j--;
+			}
+		}
+		else 
+		{
+			while (j >= 0 && Vector[j] < key)
+			{
+				Vector[j + 1] = Vector[j];
+				j--;
+			}
 		}
 		Vector[j + 1] = key;
 	}
