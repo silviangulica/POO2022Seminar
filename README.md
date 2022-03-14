@@ -1,3 +1,7 @@
+# Informatii Laborator 4
+- 15 Mar 2022
+	* Am adaugat Execitiul 1 - Laborator 4[NEFINALIZAT]
+
 # Informatii Laborator 3
 - 11 Mar 2022:
 	* Am adaugat Exercitiul 2 - Laborator 3
