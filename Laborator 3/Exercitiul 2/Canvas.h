@@ -24,12 +24,6 @@ private:
     // Check if the point is in the paintable area.
     bool CheckLimit(int Point);
 
-    // Draw the high line
-    void HighLine(int x1, int y1, int x2, int y2, char ch);
-
-    // Draw the low line
-    void LowLine(int x1, int y1, int x2, int y2, char ch);
-
 public:
     // Construct by giving the arguments.
     Canvas(int width, int height);
