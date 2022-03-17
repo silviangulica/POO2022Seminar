@@ -41,9 +41,8 @@ void Sort::TemporarQuick(int Start, int End)
 }
 
 // Constructor for creating a vector of k elem random between min .. max
-Sort::Sort(int NrElements, int MaximumValue, int MinimumValue)
+Sort::Sort(int NrElements, int MaximumValue, int MinimumValue) : Length(NrElements)
 {
-	this->Length = NrElements;
 	AllocateMem();
 
 	srand((unsigned)time(nullptr));
