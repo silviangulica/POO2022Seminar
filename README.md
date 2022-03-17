@@ -15,7 +15,7 @@
 - [x] Adaugat Exercitiul 2 - Laborator 3
 ```
   Fisiere adaugate cu succes.
-  Verifica Folderul Laborator 3!
+  Verifica dosarul Laborator 3!
 ```
 
 ## Laborator 2  
@@ -24,5 +24,5 @@
 - [x] Adaugat Exercitiul 2 - Laborator 2
 ```
   Fisiere adaugate cu succes.
-  Verifica Folderul Laborator 2!
+  Verifica dosarul Laborator 2!
 ```
