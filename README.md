@@ -1,3 +1,12 @@
+<h1 align="center">FOARTE IMPORTANT - !!! - PENTRU VERIFICAREA OREI LA CARE A FOST TRIMISA SOLUTIA</h1>
+
+```
+In momentul in care am dat rename la anumite foldere din repository, am modificat accidental si data la care fisierele 
+  sursa au fost incarcate...
+Astfel va rog sa cautati in comits, commitul "e5fbe14" in acel punct inca nu erau modificate valorile fisierelor din 
+Labotoarele 3, 2, 1
+```
+
 <h1 align="center">Informații Laborator POO</h1>
 
 ![OOP LOGO](https://maharatech.gov.eg/pluginfile.php/263592/course/overviewfiles/oop.png)
