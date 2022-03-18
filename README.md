@@ -3,8 +3,9 @@
 ```
 In momentul in care am dat rename la anumite foldere din repository, am modificat accidental si data la care fisierele 
   sursa au fost incarcate...
-Astfel va rog sa cautati in comits, commitul "e5fbe14" in acel punct inca nu erau modificate valorile fisierelor din 
+Astfel, va rog sa cautati in comits, commitul "e5fbe14" in acel punct inca nu erau modificate valorile fisierelor din 
 Labotoarele 3, 2, 1
+Imi cer scuze pentru inconvenientele provocate.
 ```
 
 <h1 align="center">Informații Laborator POO</h1>
