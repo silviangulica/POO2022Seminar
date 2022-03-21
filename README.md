@@ -11,7 +11,7 @@
 
 ## Laborator 4  
 ### 📆 18 Mar 2022
-- [ ] Adaugat Exercitiul 1 - Laborator 4
+- [x] Adaugat Exercitiul 1 - Laborator 4
 ```
   Fisiere adaugate cu succes.
   Verifica dosarul Laborator 4!
