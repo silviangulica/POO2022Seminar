@@ -3,25 +3,29 @@
 // The constructors
 Number::Number(const char* value, int base)
 {
-    if ((base < 2) || (base > 16)) 
+    if ((base >= 2 && base <= 16))
     {
-        printf("[Err]: Invalid base, for number %s \n", value);
-        return;
+        if (CheckBasetoNumber(value, base))
+        {
+            int lengh = strlen(value);
+            this->Value = new char[lengh];
+            strcpy(this->Value, value);
+            this->numberBase = base;
+        }
     }
-    // Check if the number corespond to the base
-    this->CheckBasetoNumber(value, base);
-
-    int lengh = strlen(value);
-    this->Value = new char[lengh];
-    strcpy(this->Value, value);
-    this->numberBase = base;
 }
 
 // The Deconstr
 Number::~Number()
 {
     if (this->Value != nullptr)
+    {
         free(this->Value);
+    }
+    else 
+    {
+        
+    }
 }
 
 // The Private Funcs
@@ -45,26 +49,23 @@ int Number::ConvertChar(char Char)
         case 'D': return 13;
         case 'E': return 14;
         case 'F': return 15;
-        default:
-        return -1;
+        default : return -1;
     }
 }
 
-char* Number::Convert10(char* number)
-{
 
-}
 
 bool Number::CheckBasetoNumber(const char* value, int base)
 {
     int lengh = strlen(value);
     for (int i = 0; i < lengh; i++)
     {
-        if (ConvertChar(value[i]) == base)
+        if (ConvertChar(value[i]) >= base)
         {
-            return true;
+            return false;
         }
     }
+    return true;
 }
 
 // The Public Funcs

@@ -11,7 +11,7 @@ private:
     char* Value;
 
     int ConvertChar(char Char);
-    char* Convert10(char* number);
+    //char* Convert10(char* number);
     bool CheckBasetoNumber(const char* value, int base);
 
 public:
