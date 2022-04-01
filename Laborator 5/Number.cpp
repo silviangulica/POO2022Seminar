@@ -1,34 +1,54 @@
 #include "Number.h"
 
 // The constructors
-Number::Number(const char* value, int base)
+Number::Number(char* value, int base)
 {
-    if ((base >= 2 && base <= 16))
-    {
-        if (CheckBasetoNumber(value, base))
-        {
-            int lengh = strlen(value);
-            this->Value = new char[lengh];
-            strcpy(this->Value, value);
-            this->numberBase = base;
-        }
-    }
+   // Assume that the number is correct
+   // I will transform the number in decimal form
+   //
+   // 1) I will use the string value first and then I will modify the string value
+   // 	to correspond to the some criterias:
+   // 	- If the number is correct it will remain the same 
+   // 	- If the number have a base lower than the number, the number will be transformed
+   // 		to the current base
+   // 	- If the Base is lower than 1 or higher than 16 it will be transformed in base 10
+
+	this->digitNumber = strlen(value);
+	this->numberBase  = base;
+	this->numberValuein10 = Convert10(value);
+	
+	// Check if the number have a lower base than it
+	if (!this->CheckBasetoNumber(value, base)
+	{
+		// Convert the number to the base
+
+	}	
 }
 
-// The Deconstr
-Number::~Number()
-{
-    if (this->Value != nullptr)
-    {
-        free(this->Value);
-    }
-    else 
-    {
-        
-    }
-}
+
 
 // The Private Funcs
+int Number::Convert10(char* number)
+{
+	int finalNumber = 0;
+	if (this->numberBase == 10)
+	{
+		for (int i = 0; i < digitNumber; i++)
+		{
+			finalNumber = finalNumber * 10 + ConvertChar(number[i]);
+		}
+	}else 
+	{
+		// Transform from anybase to base 10
+	}
+	
+	return finalNumber;
+}
+
+Number::~Number()
+{
+	printf("Am apelat deconstructor \n");
+}
 int Number::ConvertChar(char Char)
 {
     switch (Char)
@@ -76,7 +96,7 @@ void Number::SwitchBase(int newBase)
 
 void Number::Print() const
 {
-    printf("%s\n", this->Value);
+    printf("%d\n", this->numberValue);
 }
 
 int Number::GetDigitsCount() const

@@ -1,21 +1,19 @@
-#pragma once
-#include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
-
+#include <cstdio>
 class Number
 {   
 private:
     int digitNumber;
     int numberBase;
-    char* Value;
-
+    int numberValuein10;
+    void ConvertAnyBase(char* value, int base);
     int ConvertChar(char Char);
-    //char* Convert10(char* number);
+    int Convert10(char* number);
     bool CheckBasetoNumber(const char* value, int base);
 
 public:
-    Number(const char* value, int base);
+    Number(char* value, int base);
     ~Number();
 
     void SwitchBase(int newBase);
