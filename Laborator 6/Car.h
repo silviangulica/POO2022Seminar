@@ -1,5 +1,8 @@
 #pragma once
 #include "Weather.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 //
 // The class is Abstract. 
 // Here you have the most important atributes of a car.

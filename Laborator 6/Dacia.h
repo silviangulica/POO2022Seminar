@@ -1,34 +1,41 @@
 #pragma once
 #include "Car.h"
-#include "Weather.h"
+
 
 //	
 // This object is related to the Dacia Car model.
 //
-class Dacia : private Car
+class Dacia : public Car
 {
 private:
 	int position;
+
 public:
 	Dacia();
 	Dacia(Weather weather, int capacity, int consumption);
 
-	// Choose a weather, the speed will corespond to that.
-	void SetAverageSpeed(Weather weather);
+	// Apply the weather to the car conditions
+	void ApplyWeather(Weather weather);
+
+	// Set the average speed of Dacia Model
+	void SetAverageSpeed(double speed);
 
 	// Set the Fuel Tank Capacity.
-	void SetFuelCapacity(int capacity);
+	void SetFuelCapacity(double capacity);
 
 	// Set the Fuel Consumption.
-	void SetFuelConsumption(int consumption);
+	void SetFuelConsumption(double consumption);
 	
 	// The speed will be increased/decreased.
-	void ModifySpeed(int modifier);
+	void ModifySpeed(double modified_speed);
 
 	// Get the tank capacity.
-	void GetCapacity() const;
+	double GetCapacity() const;
 
 	// Get the car fuel consumption.
-	void GetConsumption() const;
+	double GetConsumption() const;
+
+	// Get the speed of the car
+	double GetSpeedCar() const;
 };
 
