@@ -1,84 +1,84 @@
-#include "Dacia.h"
+#include "Mazda.h"
 
 //
 // Default Constructor is used for initialization.
 //
-Dacia::Dacia()
+Mazda::Mazda()
 {
-    SetAverageSpeed(200);
-    SetFuelCapacity(20);
-    SetFuelConsumption(3.9);
+    SetAverageSpeed(230);
+    SetFuelCapacity(26);
+    SetFuelConsumption(3.1);
 }
 
 
-Dacia::Dacia(Weather weather, int capacity, int consumption)
+Mazda::Mazda(Weather weather, int capacity, int consumption)
 {
-    SetAverageSpeed(200);
+    SetAverageSpeed(230);
     SetFuelCapacity(capacity);
     SetFuelConsumption(consumption);
     ApplyWeather(weather);
 }
 
-void Dacia::ApplyWeather(Weather weather)
+void Mazda::ApplyWeather(Weather weather)
 {
 
   switch(weather)
   {
     case Rain:
-      SetAverageSpeed(180);
-      SetFuelConsumption(5);
+      SetAverageSpeed(205);
+      SetFuelConsumption(3.4);
     break;
     
     case Snow:
-      SetAverageSpeed(150);
+      SetAverageSpeed(160);
       SetFuelConsumption(6.5);
     break;
   }
 
 }
 
-void Dacia::SetAverageSpeed(double speed)
+void Mazda::SetAverageSpeed(double speed)
 {
   srand(time(NULL));
   this->average_speed = rand() % 60 + speed;
 }
 
-void Dacia::SetFuelConsumption(double consumption)
+void Mazda::SetFuelConsumption(double consumption)
 {
   srand(time(NULL));
   this->fuel_consumption = (rand() % 20 + consumption * 10) / 10;
 }
 
-void Dacia::SetFuelCapacity(double capacity)
+void Mazda::SetFuelCapacity(double capacity)
 {
   srand(time(NULL));
   this->fuel_capacity = rand() % 20 + (capacity - 5);
 }
 
-void Dacia::ModifySpeed(double modified_speed)
+void Mazda::ModifySpeed(double modified_speed)
 {
   this->average_speed = modified_speed;
 }
 
-double Dacia::GetCapacity() 
+double Mazda::GetCapacity() 
 {
   return this->fuel_capacity;
 }
 
-double Dacia::GetConsumption() 
+double Mazda::GetConsumption() 
 {
   return this->fuel_consumption;
 }
 
-double Dacia::GetSpeedCar()  
+double Mazda::GetSpeedCar()  
 {
   return this->average_speed;
 } 
 
-void Dacia::ShowCar()
+void Mazda::ShowCar()
 {
   printf("\n");
-  printf("Dacia: ");
+  printf("Mazda: ");
   printf("Viteza: %.2f ", this->GetSpeedCar());
   printf("Consum: %.2f ", this->GetConsumption());
   printf("Rezervor: %.0f \n", this->GetCapacity());

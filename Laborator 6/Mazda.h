@@ -3,13 +3,13 @@
 
 
 //	
-// This object is related to the Dacia Car model.
+// This object is related to the Mazda Car model.
 //
-class Dacia : public Car
+class Mazda : public Car
 {
 public:
-	Dacia();
-	Dacia(Weather weather, int capacity, int consumption);
+	Mazda();
+	Mazda(Weather weather, int capacity, int consumption);
 
 public:
 	// Apply the weather to the car conditions

@@ -1,17 +1,17 @@
-#include "Dacia.h"
+#include "Mercedes.h"
 
 //
 // Default Constructor is used for initialization.
 //
-Dacia::Dacia()
+Mercedes::Mercedes()
 {
-    SetAverageSpeed(200);
+    SetAverageSpeed(250);
     SetFuelCapacity(20);
-    SetFuelConsumption(3.9);
+    SetFuelConsumption(3.5);
 }
 
 
-Dacia::Dacia(Weather weather, int capacity, int consumption)
+Mercedes::Mercedes(Weather weather, int capacity, int consumption)
 {
     SetAverageSpeed(200);
     SetFuelCapacity(capacity);
@@ -19,66 +19,66 @@ Dacia::Dacia(Weather weather, int capacity, int consumption)
     ApplyWeather(weather);
 }
 
-void Dacia::ApplyWeather(Weather weather)
+void Mercedes::ApplyWeather(Weather weather)
 {
 
   switch(weather)
   {
     case Rain:
-      SetAverageSpeed(180);
-      SetFuelConsumption(5);
+      SetAverageSpeed(220);
+      SetFuelConsumption(4.1);
     break;
     
     case Snow:
-      SetAverageSpeed(150);
-      SetFuelConsumption(6.5);
+      SetAverageSpeed(140);
+      SetFuelConsumption(6.8);
     break;
   }
 
 }
 
-void Dacia::SetAverageSpeed(double speed)
+void Mercedes::SetAverageSpeed(double speed)
 {
   srand(time(NULL));
   this->average_speed = rand() % 60 + speed;
 }
 
-void Dacia::SetFuelConsumption(double consumption)
+void Mercedes::SetFuelConsumption(double consumption)
 {
   srand(time(NULL));
   this->fuel_consumption = (rand() % 20 + consumption * 10) / 10;
 }
 
-void Dacia::SetFuelCapacity(double capacity)
+void Mercedes::SetFuelCapacity(double capacity)
 {
   srand(time(NULL));
   this->fuel_capacity = rand() % 20 + (capacity - 5);
 }
 
-void Dacia::ModifySpeed(double modified_speed)
+void Mercedes::ModifySpeed(double modified_speed)
 {
   this->average_speed = modified_speed;
 }
 
-double Dacia::GetCapacity() 
+double Mercedes::GetCapacity() 
 {
   return this->fuel_capacity;
 }
 
-double Dacia::GetConsumption() 
+double Mercedes::GetConsumption() 
 {
   return this->fuel_consumption;
 }
 
-double Dacia::GetSpeedCar()  
+double Mercedes::GetSpeedCar()  
 {
   return this->average_speed;
 } 
 
-void Dacia::ShowCar()
+void Mercedes::ShowCar()
 {
   printf("\n");
-  printf("Dacia: ");
+  printf("Mercedes: ");
   printf("Viteza: %.2f ", this->GetSpeedCar());
   printf("Consum: %.2f ", this->GetConsumption());
   printf("Rezervor: %.0f \n", this->GetCapacity());
