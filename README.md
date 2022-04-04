@@ -2,11 +2,17 @@
 
 ![OOP LOGO](https://maharatech.gov.eg/pluginfile.php/263592/course/overviewfiles/oop.png)
 ## Laborator 5  
+### 📆 1 Apr 2022
+- [x] Adaugat Exercitiul 1 - Laborator 6
+```
+  Am adaugat versiunea finala(corespunzatoare cerintelor de pe site).
+```
+
+## Laborator 5  
 ### 📆 21 Mar 2022
 - [ ] Adaugat Exercitiul 1 - Laborator 5
-- [ ] Adaugat Exercitiul 2 - Laborator 5
 ```
-  Se lucreaza la ambele fisiere sursa pentru fiecare execitiu in parte.
+  Revin cu o implementare mai tarziu.
 ```
 
 ## Laborator 4  
