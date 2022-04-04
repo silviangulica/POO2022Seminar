@@ -1,7 +1,7 @@
 <h1 align="center">Informații Laborator POO</h1>
 
 ![OOP LOGO](https://maharatech.gov.eg/pluginfile.php/263592/course/overviewfiles/oop.png)
-## Laborator 5  
+## Laborator 6  
 ### 📆 1 Apr 2022
 - [x] Adaugat Exercitiul 1 - Laborator 6
 ```
