@@ -17,6 +17,8 @@ Number::Number(char* value, int base)
 	this->numberBase  = base;
 	this->numberValuein10 = Convert10(value);
 	
+    I will convert this next time!
+
 	// Check if the number have a lower base than it
 	if (!this->CheckBasetoNumber(value, base)
 	{

@@ -10,6 +10,7 @@
 
 ## Laborator 5  
 ### 📆 21 Mar 2022
+- ! ! ! Am refacut de la 0 tot exercitiul
 - [ ] Adaugat Exercitiul 1 - Laborator 5
 ```
   Revin cu o implementare mai tarziu.
